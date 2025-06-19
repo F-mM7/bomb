@@ -2,17 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-
-// ゲーム開始前に表示するページ
-function StartPage({ onStart }: { onStart: () => void }) {
-  return (
-    <div className="start-page">
-      <h1>ゲームの説明</h1>
-      <p>ここにゲームのルールや遊び方を記載してください。</p>
-      <button onClick={onStart}>スタート</button>
-    </div>
-  );
-}
+import StartPage from "./components/StartPage";
 
 function App() {
   const [started, setStarted] = useState(false);
